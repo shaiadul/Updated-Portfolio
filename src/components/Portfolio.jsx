@@ -1,5 +1,5 @@
 import React from "react";
-import api from "../assets/portfolio/api.jpg";
+import evolve from "../assets/portfolio/evolve.png";
 import apod from "../assets/portfolio/apod.jpg";
 import iptracker from "../assets/portfolio/iptracker.jpg";
 import nftportal from "../assets/portfolio/nftportal.jpg";
@@ -10,9 +10,9 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: api,
-      link: 'https://crypto-info-api.herokuapp.com/',
-      repo: 'https://github.com/rahulkarda/crypto-info-api'
+      src: evolve,
+      link: 'https://assignment-ten-2cf19.web.app/',
+      repo: 'https://github.com/shaiadul/envolve-client'
     },
     {
       id: 2,
@@ -65,7 +65,7 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt="projects"
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 w-full h-fit"
               />
               <div className="flex items-center justify-center bg-gradient-to-r from-cyan-900 to-purple-900">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-bold font-serif" onClick={ () => window.open(link, '_blank')}>

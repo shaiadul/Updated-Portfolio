@@ -31,14 +31,14 @@ const NavBar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-purple-600 bg-black fixed nav">
       <div>
-        <h1 className="text-5xl font-signature ml-2"><a className="link-underline link-underline-black" href="https://rahulkarda.netlify.app" target="_blank" rel="noreferrer">Saidul</a></h1>
+        <h1 className="text-5xl font-signature ml-2"><a className="link-underline link-underline-black" href="home" target="_blank" rel="noreferrer">Saidul</a></h1>
       </div>
 
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="nav-links px-4 cursor-pointer capitalize font-medium text-purple-600 hover:scale-105 hover:text-white duration-200 link-underline"
+            className="nav-links px-4 cursor-pointer capitalize font-serif font-bold text-purple-600 hover:scale-105 hover:text-white duration-200 link-underline "
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -59,7 +59,7 @@ const NavBar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="px-4 cursor-pointer capitalize py-6 text-4xl "
             >
               <Link
                 onClick={() => setNav(!nav)}
