@@ -10,7 +10,7 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: evolve,
+      src: teamprojec,
       link: 'https://assignment-ten-2cf19.web.app/',
       repo: 'https://github.com/shaiadul/envolve-client'
     },
@@ -22,13 +22,13 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: alpho,
+      src: walton,
       link: 'https://alphobyrahul.netlify.app/',
       repo: 'https://github.com/rahulkarda/NASA-alpho'
     },
     {
       id: 4,
-      src: teamprojec,
+      src: evolve,
       link: 'https://waveatrahul.netlify.app/',
       repo: 'https://github.com/rahulkarda/Wave-Portal'
     },
@@ -40,7 +40,7 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      src: walton,
+      src: alpho,
       link: 'https://trackmyip.netlify.app/',
       repo: 'https://github.com/rahulkarda/IP-Address-Tracker'
     },
