@@ -62,7 +62,7 @@ const Portfolio = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, link, repo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              {/* project picture include */}
+              {/* project picture include success*/}
               <img
                 src={src}
                 alt="projects"
