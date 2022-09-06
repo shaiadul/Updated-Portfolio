@@ -1,10 +1,10 @@
 import React from "react";
 import evolve from "../assets/portfolio/evolve.png";
-import apod from "../assets/portfolio/apod.jpg";
-import iptracker from "../assets/portfolio/iptracker.jpg";
-import nftportal from "../assets/portfolio/nftportal.jpg";
-import webpostman from "../assets/portfolio/webpostman.jpg";
-import waveportal from "../assets/portfolio/waveportal.jpg";
+import alpho from "../assets/portfolio/alpho.png";
+import schoolmap from "../assets/portfolio/schoolmap.png";
+import teamprojec from "../assets/portfolio/teamprojec.png";
+import translate from "../assets/portfolio/translate.png";
+import walton from "../assets/portfolio/walton.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -16,31 +16,31 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: webpostman,
+      src: schoolmap,
       link: 'https://webpostman.netlify.app/',
       repo: 'https://github.com/rahulkarda/Web-Postman'
     },
     {
       id: 3,
-      src: apod,
-      link: 'https://apodbyrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/NASA-APOD'
+      src: alpho,
+      link: 'https://alphobyrahul.netlify.app/',
+      repo: 'https://github.com/rahulkarda/NASA-alpho'
     },
     {
       id: 4,
-      src: waveportal,
+      src: teamprojec,
       link: 'https://waveatrahul.netlify.app/',
       repo: 'https://github.com/rahulkarda/Wave-Portal'
     },
     {
       id: 5,
-      src: nftportal,
+      src: translate,
       link: 'https://nftportalbyrahul.netlify.app/',
       repo: 'https://github.com/rahulkarda/NFT-Portal'
     },
     {
       id: 6,
-      src: iptracker,
+      src: walton,
       link: 'https://trackmyip.netlify.app/',
       repo: 'https://github.com/rahulkarda/IP-Address-Tracker'
     },
@@ -65,7 +65,7 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt="projects"
-                className="rounded-md duration-200 hover:scale-105 w-full h-fit"
+                className="rounded-md duration-200 hover:scale-105 w-full h-56"
               />
               <div className="flex items-center justify-center bg-gradient-to-r from-cyan-900 to-purple-900">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-bold font-serif" onClick={ () => window.open(link, '_blank')}>
