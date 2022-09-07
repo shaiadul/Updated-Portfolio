@@ -11,38 +11,38 @@ const Portfolio = () => {
     {
       id: 1,
       src: teamprojec,
-      link: 'https://assignment-ten-2cf19.web.app/',
-      repo: 'https://github.com/shaiadul/envolve-client'
+      link: 'https://neighbour-home.web.app/',
+      repo: 'https://github.com/khanshorif331/neighbour-home'
     },
     {
       id: 2,
       src: schoolmap,
-      link: 'https://webpostman.netlify.app/',
-      repo: 'https://github.com/rahulkarda/Web-Postman'
+      link: 'https://schoolmap-7f024.web.app/',
+      repo: 'https://github.com/shaiadul/SchoolMap'
     },
     {
       id: 3,
       src: walton,
-      link: 'https://alphobyrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/NASA-alpho'
+      link: 'https://walton-pc.web.app/',
+      repo: 'https://github.com/shaiadul/waltonPc-client'
     },
     {
       id: 4,
       src: evolve,
-      link: 'https://waveatrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/Wave-Portal'
+      link: 'https://assignment-ten-2cf19.web.app/',
+      repo: 'https://github.com/shaiadul/envolve-client'
     },
     {
       id: 5,
       src: translate,
-      link: 'https://nftportalbyrahul.netlify.app/',
-      repo: 'https://github.com/rahulkarda/NFT-Portal'
+      link: 'https://translate-saidul-404.netlify.app/',
+      repo: 'https://github.com/shaiadul/Saidul_Translate'
     },
     {
       id: 6,
       src: alpho,
-      link: 'https://trackmyip.netlify.app/',
-      repo: 'https://github.com/rahulkarda/IP-Address-Tracker'
+      link: 'https://assignment-three96.netlify.app/#home',
+      repo: 'https://github.com/Porgramming-Hero-web-course/convention-center-shaiadul/tree/main'
     },
   ];
 
