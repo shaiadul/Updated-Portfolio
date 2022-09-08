@@ -20,10 +20,10 @@ const Home = () => {
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-md sm:text-7xl font-bold text-white">
             I'm a 
-             <span className="text-yellow-500">M</span>
+             <span className="pl-2 text-yellow-500">M</span>
             <span className="text-red-500">E</span>
             <span className="text-green-500">R</span>
-            <span className="text-blue-500">N</span>
+            <span className="pr-2 text-blue-500">N</span>
               Stack Web Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
