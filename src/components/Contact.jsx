@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+// -----------------------
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-//function for form reset
-function handleSubmit(e) {
-  setTimeout(() => {
-    e.target.reset();
-  }, 3000);
-}
+// ------------------------------
+
 
 const Contact = () => {
+
+
+   // email.js-sender
+   const form = useRef();
+
+   const sendEmail = (e) => {
+     e.preventDefault();
+ 
+     emailjs.sendForm('service_4amg05k', 'template_d4vimcc', form.current, 'xSWqd49Q1kRqnKXwD')
+       .then((result) => {
+           console.log(result.text);
+           toast.success("Thanks! Message sent successfully");
+       }, (error) => {
+           console.log(error.text);
+           toast.error("Something wrong! Try again");
+       });
+       
+   };
   return (
     <div
       name="contact"
@@ -49,25 +67,33 @@ const Contact = () => {
               </div>
             </div>
             {/* form section added */}
-            <form className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+            <form
+            ref={form} onSubmit={sendEmail}
+             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
               <label className="block">
-                <span className="mb-1 font-bold font-serif">Full name</span>
+                <span name="name" className="mb-1 font-bold font-serif">Full name</span>
                 <input type="text" placeholder="Md Saidul Basar" className="block w-full shadow-sm bg-gray-800 pl-2" />
               </label>
               <label className="block">
-                <span className="mb-1 font-bold font-serif">Email address</span>
+                <span name="email" className="mb-1 font-bold font-serif">Email address</span>
                 <input type="email" placeholder="saidul404@gmail.com" className="block w-full  shadow-sm bg-gray-800 pl-2" />
               </label>
               <label className="block">
-                <span className="mb-1 font-bold font-serif">Message</span>
-                <textarea rows="3" placeholder="I am interest to hire you ! As soon as possible contuct me." className="block w-full rounded-md bg-gray-800 pl-2"></textarea>
+                <span name="project" className="mb-1 font-bold font-serif">What type of project ?</span>
+                <input type="text" placeholder="E-Commerce" className="block w-full  shadow-sm bg-gray-800 pl-2" />
               </label>
-              <button type="button" className="self-center px-6 py-2 text-lg rounded bg-gradient-to-r from-cyan-500 to-purple-500 cursor-pointer font-signature font-bold">Submit Massage</button>
+              <label className="block">
+                <span className="mb-1 font-bold font-serif">Message</span>
+                <textarea name="message" rows="3" placeholder="I am interest to hire you ! As soon as possible contuct me." className="block w-full rounded-md bg-gray-800 pl-2"></textarea>
+              </label>
+              <button type="submit" className="self-center px-6 py-2 text-lg rounded bg-gradient-to-r from-cyan-500 to-purple-500 cursor-pointer font-signature font-bold">Submit Massage</button>
             </form>
           </div>
         </section>
 
       </div>
+      {/* -------------- */}
+      <ToastContainer />
     </div>
   );
 };
