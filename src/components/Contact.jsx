@@ -13,9 +13,10 @@ const Contact = () => {
    // email.js-sender
    const form = useRef();
 
+
+
    const sendEmail = (e) => {
      e.preventDefault();
- 
      emailjs.sendForm('service_4amg05k', 'template_d4vimcc', form.current, 'xSWqd49Q1kRqnKXwD')
        .then((result) => {
            console.log(result.text);
@@ -71,16 +72,16 @@ const Contact = () => {
             ref={form} onSubmit={sendEmail}
              className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
               <label className="block">
-                <span name="name" className="mb-1 font-bold font-serif">Full name</span>
-                <input type="text" placeholder="Md Saidul Basar" className="block w-full shadow-sm bg-gray-800 pl-2" />
+                <span className="mb-1 font-bold font-serif">Full name</span>
+                <input name="name" type="text" placeholder="Md Saidul Basar" className="block w-full shadow-sm bg-gray-800 pl-2" />
               </label>
               <label className="block">
-                <span name="email" className="mb-1 font-bold font-serif">Email address</span>
-                <input type="email" placeholder="saidul404@gmail.com" className="block w-full  shadow-sm bg-gray-800 pl-2" />
+                <span className="mb-1 font-bold font-serif">Email address</span>
+                <input name="email" type="email" placeholder="saidul404@gmail.com" className="block w-full  shadow-sm bg-gray-800 pl-2" />
               </label>
               <label className="block">
-                <span name="project" className="mb-1 font-bold font-serif">What type of project ?</span>
-                <input type="text" placeholder="E-Commerce" className="block w-full  shadow-sm bg-gray-800 pl-2" />
+                <span className="mb-1 font-bold font-serif">What type of project ?</span>
+                <input name="project" type="text" placeholder="E-Commerce" className="block w-full  shadow-sm bg-gray-800 pl-2" />
               </label>
               <label className="block">
                 <span className="mb-1 font-bold font-serif">Message</span>
