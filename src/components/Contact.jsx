@@ -13,8 +13,6 @@ const Contact = () => {
    // email.js-sender
    const form = useRef();
 
-
-
    const sendEmail = (e) => {
      e.preventDefault();
      emailjs.sendForm('service_4amg05k', 'template_d4vimcc', form.current, 'xSWqd49Q1kRqnKXwD')
