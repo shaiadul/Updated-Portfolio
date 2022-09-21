@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
 
 
-   // email.js-sender
+   // email.js-sender with testify
    const form = useRef();
 
    const sendEmail = (e) => {
