@@ -18,7 +18,7 @@ const Contact = () => {
      emailjs.sendForm('service_4amg05k', 'template_d4vimcc', form.current, 'xSWqd49Q1kRqnKXwD')
        .then((result) => {
            console.log(result.text);
-           toast.success("Thanks! Message sent successfully"); //success 
+           toast.success("Thanks! Message sent successfully"); //success message
        }, (error) => {
            console.log(error.text);
            toast.error("Something wrong! Try again"); //error set
