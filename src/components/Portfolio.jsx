@@ -79,7 +79,7 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> {/* end of portfolio */}
     </div>
   );
 };
