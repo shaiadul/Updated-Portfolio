@@ -16,7 +16,7 @@ const Home = () => {
             alt="Saidul-Pic"
             className="rounded-full mx-auto w-2/3 md:w-full bg-gradient-to-r from-cyan-500 to-purple-500"
           />
-        </div>
+        </div> {/* End of image */}
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-md sm:text-7xl font-bold text-white">
             I'm a 
