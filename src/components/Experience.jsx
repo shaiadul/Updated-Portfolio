@@ -113,7 +113,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> {/* End of container */}
     </div>
   );
 };
