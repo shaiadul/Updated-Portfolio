@@ -112,7 +112,7 @@ const Experience = () => {
               <p className="mt-4">{title}</p>
             </div>
           ))}
-        </div>
+        </div> {/* End of techs */}
       </div> {/* End of container */}
     </div>
   );
