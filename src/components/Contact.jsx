@@ -21,7 +21,7 @@ const Contact = () => {
            toast.success("Thanks! Message sent successfully");
        }, (error) => {
            console.log(error.text);
-           toast.error("Something wrong! Try again");
+           toast.error("Something wrong! Try again"); //error set
        });
        
    };
