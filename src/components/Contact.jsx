@@ -89,7 +89,6 @@ const Contact = () => {
             </form>
           </div>
         </section>
-
       </div>
       {/* -------------- */}
       <ToastContainer />
