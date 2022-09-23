@@ -110,7 +110,7 @@ const Experience = () => {
             >
               <img src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
-            </div> {/* End of techs */}
+            </div> 
           ))}
         </div> {/* End of techs */}
       </div> {/* End of container */}
