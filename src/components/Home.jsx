@@ -25,7 +25,7 @@ const Home = () => {
             <span className="text-green-500">R</span>
             <span className="pr-2 text-blue-500">N</span>
               Stack Web Developer
-          </h2>
+          </h2> 
           <p className="text-gray-500 py-4 max-w-md">
             I have 1 years of experience building websites and desgining software.
             I love to work on web application using technologies like
