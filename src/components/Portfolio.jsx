@@ -75,7 +75,7 @@ const Portfolio = () => {
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 font-bold font-serif" onClick={ () => window.open(repo, '_blank')}>
                   GitHub
                 </button> {/* project link */}
-              </div>
+            </div> {/* ending*/}
             </div>
           ))}
         </div>
