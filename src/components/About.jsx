@@ -16,7 +16,7 @@ const About = () => {
         <p className="text-xl mt-5">
         I am a web developer, working in both, backend and frontend programming. Excited for improving my skills and learning new technologies. I'm open to learn and work with any web technology and currently doing freelance gigs.
         </p>
-{/* some space*/}
+{/* some space dotted*/}
         <br />
 
         <p className="text-xl">
