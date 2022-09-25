@@ -11,12 +11,12 @@ const About = () => {
           <p className="text-4xl font-bold inline border-double border-b-4 border-purple-500">
             About
           </p>
-        </div>
+        </div> 
 
         <p className="text-xl mt-5">
         I am a web developer, working in both, backend and frontend programming. Excited for improving my skills and learning new technologies. I'm open to learn and work with any web technology and currently doing freelance gigs.
         </p>
-
+{/* some */}
         <br />
 
         <p className="text-xl">
@@ -24,7 +24,7 @@ const About = () => {
         I value minimalistic designs, thoughtful branding of the content, and customer relatable experience. Let’s discover together how we can make your project convert better!<br /> <br />
         I enjoy creating or redesigning a distinct identity for a product or service, get more traffic from search engine and social platforms.
         </p>
-      </div>
+      </div> 
     </div>
   );
 };
